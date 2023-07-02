@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts, getFilterValue } from 'redux/selectors';
-import { deleteContactThunk } from 'redux/operations';
+import { deleteContactThunk } from 'redux/ContactSlice/operations';
 import css from './ContactList.module.css';
 
 export function ContactList() {
@@ -24,6 +24,7 @@ export function ContactList() {
           <li className={css.contact_name} key={id}>
             {name} :<span className={css.contact_number}>{number}</span>
             <button
+              className={css.contact_button}
               type="button"
               onClick={() => {
                 dispatch(deleteContactThunk(id));

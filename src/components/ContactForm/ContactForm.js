@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { addContactThunk } from 'redux/operations';
+import { addContactThunk } from 'redux/ContactSlice/operations';
 import { getContacts } from 'redux/selectors';
 import css from './ContactForm.module.css';
 
@@ -32,12 +32,13 @@ export function ContactForm() {
 
   return (
     <form className={css.contact_form} onSubmit={handleSubmit}>
-      <label>
+      <label className={css.label}>
         Name
         <input
           className={css.contact_form_input}
           type="text"
           name="name"
+          placeholder="Name"
           // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
@@ -49,6 +50,7 @@ export function ContactForm() {
           className={css.contact_form_input}
           type="tel"
           name="number"
+          placeholder="Number"
           // pattern="^[+]?[(]?[0-9]{1,4}[)]?[-s.]?[0-9]{1,4}[-s.]?[0-9]{1,6}$"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
