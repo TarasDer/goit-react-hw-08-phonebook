@@ -19,7 +19,7 @@ export const App = () => {
     dispatch(currentUserThunk());
   }, [dispatch]);
   return (
-    <div className={css.container}>
+    <div className={css.section}>
       {isLoding && <div>Loading...</div>}
       <Routes>
         <Route path="/" element={<Layout />}>

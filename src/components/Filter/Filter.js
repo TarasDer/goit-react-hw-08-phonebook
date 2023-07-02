@@ -17,6 +17,7 @@ export function Filter() {
         className={css.contact_filter}
         type="text"
         name="filter"
+        value={filter}
         onChange={handleFilterChange}
       />
     </label>
