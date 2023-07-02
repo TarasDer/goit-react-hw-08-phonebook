@@ -2,3 +2,29 @@
   display: block;
   border: 2px solid blue;
 }
+.form {
+  width: 400px;
+  /* border: 4px solid rgba(41, 124, 77, 0.592); */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.input {
+  width: 350px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(3, 3, 39);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input:hover,
+.input:focus {
+  outline: 1px solid rgb(90, 170, 221);
+}
+
+h2 {
+  margin-bottom: 20px;
+}

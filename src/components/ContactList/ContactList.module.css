@@ -2,8 +2,32 @@
   display: flex;
   gap: 10px;
   padding: 5px;
+  font-size: 24px;
 }
 
 .contact_number {
   font-weight: 600;
+}
+
+.contact_button {
+  padding: 2px 10px;
+  border-radius: 2px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  background-color: rgb(136, 187, 122);
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.contact_button:hover {
+  background-color: rgb(100, 194, 201);
+  color: rgb(48, 19, 213);
 }

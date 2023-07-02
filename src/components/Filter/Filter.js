@@ -11,15 +11,19 @@ export function Filter() {
     dispatch(addFilter(event.target.value));
   };
   return (
-    <label>
-      Find contacts by name
-      <input
-        className={css.contact_filter}
-        type="text"
-        name="filter"
-        value={filter}
-        onChange={handleFilterChange}
-      />
-    </label>
+    <div className={css.form}>
+      <h2 className={css.title}>Contacts</h2>
+
+      <label>
+        Find contacts by name
+        <input
+          className={css.input}
+          type="text"
+          name="filter"
+          value={filter}
+          onChange={handleFilterChange}
+        />
+      </label>
+    </div>
   );
 }

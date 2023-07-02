@@ -1,31 +1,45 @@
 .contact_form {
+  width: 400px;
+  border: 4px solid rgba(41, 124, 77, 0.592);
+  border-radius: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  border: 2px solid darkgray;
+  text-align: center;
 }
 
 .contact_form_input {
-  display: block;
-  border: 2px solid blue;
+  width: 350px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(3, 3, 39);
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .contact_form_buttom {
-  background-color: rgb(205, 237, 238);
-  border: 2px solid blue;
-  border-radius: 4px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 16px;
+  padding: 8px 26px;
+  border-radius: 2px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  background-color: rgb(136, 187, 122);
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .contact_form_buttom:hover {
-  background-color: rgb(222, 237, 238);
+  background-color: rgb(100, 194, 201);
+  color: rgb(48, 19, 213);
 }
 
 .contact_form_buttom:active {
-  background-color: rgb(28, 82, 86);
-  color: aliceblue;
+  background-color: rgb(75, 86, 86);
+  color: white;
 }
